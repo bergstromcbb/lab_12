@@ -1,0 +1,49 @@
+body {
+	font-family: 'Shadows Into Light Two', cursive;
+	background-color: lightcyan;
+    background-image: url("images/background.png");
+    background-size: cover;
+    color: #3e7274;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.box {
+	height: 30px;
+    width: 250px;
+}
+
+#flower {
+	float: right;
+	width: 30%;
+}
+
+h1 {
+	font-size: 3vw;
+}
+
+div {
+	border-color: #54bcbc;
+	border-style: solid;
+	border-width: 4px;
+	width: 50%;
+	background-color: #fff4f0;
+	margin: auto;
+	font-size: 2vw;
+	border-radius: 2vw;
+}
+
+
+#insideContainer {
+	width: 80%;
+	margin: auto;
+}

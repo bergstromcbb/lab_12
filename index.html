@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="todoModule">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fuckingstyles.css">
+<title>Lab 12</title>
+</head>
+<body ng-controller="todoController">
+<div class="anything">
+<section id="insideContainer">
+	<h1>Things to be done:</h1>
+	<img src="images/flower.png" id="flower">
+<p>
+	<input type="text" class="box" placeholder="filter" ng-model="choreFilter">
+</p>
+<p id="choreList">
+	<p ng-repeat='chore in chores | filter: choreFilter track by $index '>
+	<input type="checkbox" ng-click="removeChore(chore)">{{chore}}</p>
+
+</p>
+<form>
+<p>
+	<input class="box" type="text" placeholder="new chore" ng-model="choreToAdd">
+	<button type="submit" ng-click="onclick(choreToAdd)">
+		Add something NEW
+	</button>
+</p>
+</form>
+</section></div>
+
+
+<script src="angular.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
